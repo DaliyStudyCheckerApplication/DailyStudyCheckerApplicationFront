@@ -3,7 +3,7 @@ import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 
 function HomeScreen() {
-  return <Text></Text>;
+  return <Text>HomeScreen</Text>;
 }
 
 export default HomeScreen;

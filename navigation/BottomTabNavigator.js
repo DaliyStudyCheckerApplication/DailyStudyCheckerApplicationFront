@@ -9,10 +9,11 @@ const Tab = createBottomTabNavigator();
 
 export default function BottomTabNavigation() {
   return (
-    <Tab.Navigator>
-      <Tab.Screen name="DrawerTabNavigator" component={DrawerTabNavigator} />
-      <Tab.Screen name="Team" component={TeamScreen} />
-      <Tab.Screen name="Status" component={StatusScreen} />
-    </Tab.Navigator>
+
+      <Tab.Navigator initialRouteName={'DrawerTabNavigator'}>
+        <Tab.Screen name="DrawerTabNavigator" component={DrawerTabNavigator} />
+        <Tab.Screen name="Team" component={TeamScreen} />
+        <Tab.Screen name="Status" component={StatusScreen} />
+      </Tab.Navigator>
   );
 }

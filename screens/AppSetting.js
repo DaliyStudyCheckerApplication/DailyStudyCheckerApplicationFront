@@ -1,12 +1,9 @@
 import 'react-native-gesture-handler';
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
-function PenaltyScreen() {
-  return (
-    <View>
-      <Text></Text>
-    </View>
-  );
+
+function HomeScreen() {
+  return <Text>App Setting!</Text>;
 }
 
-export default PenaltyScreen;
+export default HomeScreen;

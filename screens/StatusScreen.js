@@ -1,12 +1,12 @@
 import 'react-native-gesture-handler';
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
-function TeamScreen() {
+function StatusScreen() {
   return (
     <View>
-      <Text>TeamScreen</Text>
+      <Text>StatusScreen!</Text>
     </View>
   );
 }
 
-export default TeamScreen;
+export default StatusScreen;

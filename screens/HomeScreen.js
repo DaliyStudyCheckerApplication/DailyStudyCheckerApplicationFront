@@ -1,11 +1,10 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, Button} from 'react-native';
+
 function HomeScreen() {
   return (
-    <View>
-      <Text></Text>
-    </View>
+    <Text>HomeScreen</Text>
   );
 }
 

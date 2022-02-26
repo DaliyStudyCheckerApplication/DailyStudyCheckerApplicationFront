@@ -3,7 +3,7 @@ import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 
 function TestScreen() {
-  return <Text>App Setting!</Text>;
+  return <Text>Test Screen!</Text>;
 }
 
 export default TestScreen;

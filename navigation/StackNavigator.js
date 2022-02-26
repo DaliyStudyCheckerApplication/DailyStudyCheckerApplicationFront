@@ -1,24 +1,31 @@
 import React, {useEffect, useState} from 'react';
-import {View, Image, TouchableOpacity} from 'react-native';
+import {View, Button} from 'react-native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import BottomTabNavigation from './BottomTabNavigator';
-import TestScreen from '../screens/TestScreen';
+
+import HomeScreen from '../screens/HomeScreen';
+import DrawerTabNavigator from './DrawerTabNavigator';
 
 const Stack = createNativeStackNavigator();
 
-export default function StackNavigator() {
+export default function StackNavigator({navigation}) {
   return (
-    <Stack.Navigator>
-      {/* <Stack.Screen
-        name="main"
-        component={BottomTabNavigation}
+    <Stack.Navigator initialRouteName="HomeScreen">
+      <Stack.Screen
+        name="HomeScreen"
+        component={HomeScreen}
         options={{
-          title: '홈',
-          headerShown: true,
-        }}
-      /> */}
-      <Stack.Screen name="Test" component={TestScreen}></Stack.Screen>
+          headerRight: () => (
+            <Button
+              title="Drawer"
+              onPress={() =>
+                navigation.navigate('DrawerTabNavigation')
+              }></Button>
+          ),
+        }}></Stack.Screen>
+      <Stack.Screen
+        name="DrawerTabNavigation"
+        component={DrawerTabNavigator}></Stack.Screen>
     </Stack.Navigator>
   );
 }

@@ -4,17 +4,27 @@ import {View, Text} from 'react-native';
 
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import StackNavigator from './navigation/StackNavigator';
+// import StackNavigator from './navigation/StackNavigator';
+
+import BottomTabNavigation from './navigation/BottomTabNavigator';
 
 const Stack = createNativeStackNavigator();
 
 function App() {
   return (
-    <View>
-      <NavigationContainer>
-        <StackNavigator />
-      </NavigationContainer>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="BottomTabNavigation"
+          component={BottomTabNavigation}
+          props="hi"
+        />
+        {/* <Stack.Screen 
+          name=""
+          component={}
+        /> */}
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 

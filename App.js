@@ -19,10 +19,6 @@ function App() {
           component={BottomTabNavigation}
           props="hi"
         />
-        {/* <Stack.Screen 
-          name=""
-          component={}
-        /> */}
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -15,6 +15,7 @@ export default function DrawerTabNavigator() {
     <Drawer.Navigator
     drawerType="front"
     drawerPosition='left'
+    // drawerContent={SideDrawer}
    >
       <Drawer.Screen name="HomeScreen" component={HomeScreen} />
       <Drawer.Screen name="MyAccount" component={MyAccount} />
